@@ -1,0 +1,29 @@
+name: second workflow
+on: push
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ubuntu-latest
+        run: |
+          node -v
+          npm -v
+          echo "ubuntu-latest"
+  run-paralel-command:
+    runs-on: windows-latest
+    steps:
+      - name: windows-latest
+        run: |
+          node -v
+          npm -v
+          echo "windows-latest"
+  run-second-command:
+    runs-on: macos-latest
+    needs: first_job
+    steps:
+      - name: macos-latest
+        run: |
+          node -v
+          npm -v
+          echo "macos-latest"

@@ -1,5 +1,9 @@
 name: fifth_workflow
-on: [push, issues, pull_request]
+on:
+  issues:
+    types: [edited, opened, deleted]
+  pull_request:
+    types: [assigned, closed]
 
 jobs:
   first_job:

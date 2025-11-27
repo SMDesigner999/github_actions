@@ -8,7 +8,7 @@ jobs:
       - name: context to json
         id: context
         run: |
-          echo Title: ${{  toJson(github)}}
-          echo runner: ${{  toJson(runner)}}
-          echo job: ${{  toJson(job)}}
-          echo step: ${{  toJson(steps)}}
+          echo Title: '${{  toJson(github)}}'
+          echo runner: '${{  toJson(runner)}}'
+          echo job: '${{  toJson(job)}}'
+          echo step: '${{  toJson(steps)}}'

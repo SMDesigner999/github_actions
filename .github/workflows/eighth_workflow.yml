@@ -14,4 +14,4 @@ jobs:
     steps:
       - name: event vars
         run: |
-          echo Title: ${{ github.event.inputs.titleCustom }}
+          echo Title: ${{inputs.titleCustom }}

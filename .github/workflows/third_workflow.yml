@@ -8,7 +8,8 @@ jobs:
       - name: first_step
         run: echo "first step"
       - name: list file
-        run: ls -la
+        #run: ls -la
+        run: qwee -as
       #-uses : actions/checkout@v4
       #- uses: actions/checkout@v4
       - name: copy flies

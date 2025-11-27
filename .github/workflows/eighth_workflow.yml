@@ -1,0 +1,11 @@
+name: eighth workflow
+on: workflow_dispatch
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: event vars
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REF

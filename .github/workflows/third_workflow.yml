@@ -7,8 +7,8 @@ jobs:
     steps:
       - name: first_step
         run: echo "first step"
-      - name: second_step
-        run: |
-          pwd
-          ls -la
-          echo "second step"
+      - name: list file
+        run: ls -la
+      - uses: actions/checkout@v4
+      - name: list file second
+        run: ls -la

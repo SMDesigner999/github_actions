@@ -8,4 +8,7 @@ jobs:
       - name: first_step
         run: echo "first step"
       - name: second_step
-        run: echo "second step"
+        run: |
+          node -v
+          npm -v
+          echo "second step"

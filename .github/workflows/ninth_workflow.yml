@@ -1,0 +1,11 @@
+name: ninth workflow
+on:
+  repository_dispatch:
+    types: [test]
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: event vars
+        run: |
+          echo Title: ${{ github.event.client_payload.titleCustom }}

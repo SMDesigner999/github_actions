@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/SMDesigner999/github_actions#readme",
   "dependencies": {
-    "axios": "^1.13.2"
+    "axios": "^1.13.2",
+    "swiper": "^12.0.3"
   }
 }

@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first steep
-        run: echo sleep 30
+        run: exit 1
       - name: runs on cancelled
         if: ${{ cancelled() }}
         run: echo "runs on cancelled"

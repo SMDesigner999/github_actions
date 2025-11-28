@@ -4,7 +4,7 @@ on: push
 jobs:
   first_job:
     runs-on: ubuntu-latest
-    environment: "PROD"
+    environment: "STAG"
     steps:
       - name: event vars
         run: |

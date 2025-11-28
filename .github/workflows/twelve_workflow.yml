@@ -5,7 +5,7 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: event varss
+      - name: event vars
         run: |
           echo '${{vars.STATUS}}'  
           echo '${{secrets.PASS}}'

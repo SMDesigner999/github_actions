@@ -25,5 +25,5 @@ jobs:
           #path: math-result
       - name: display content
         run: |
-          value='cat math-result.txt'
+          value=`cat math-result.txt`
           echo $value

@@ -1,0 +1,14 @@
+name: seventeenth workflow
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        required: false
+        type: string
+        default: "hello world"
+        description: " custom Title"
+jobs:
+  run-first-command:
+    uses: ./.github/workflows/reusable_workflow.yml
+    with:
+      title: ${{inputs.title}}

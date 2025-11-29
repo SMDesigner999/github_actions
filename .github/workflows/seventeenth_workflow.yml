@@ -12,3 +12,7 @@ jobs:
     uses: ./.github/workflows/reusable_workflow.yml
     with:
       title: ${{inputs.title}}
+  run-first-commands:
+    uses: SMDesigner999/workflows/.github/workflows/blank.yml@main
+    with:
+      title: ${{inputs.title}}
